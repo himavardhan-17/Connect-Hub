@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "TaskFlow Connect",
+  title: "Connect Team",
   description: "Volunteer Task Management System for Connect Club",
 };
 
