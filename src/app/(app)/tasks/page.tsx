@@ -152,11 +152,9 @@ export default function TasksPage() {
         )
       );
 
-      // 🎉 Fetch current user's name from volunteers collection
       const currentVolunteer = volunteers.find(v => v.id === user?.uid);
       const userName = currentVolunteer?.name || "Volunteer";
 
-      // 🎉 Random praise
       const randomFn = motivationalQuotes[Math.floor(Math.random() * motivationalQuotes.length)];
       setPraiseQuote(randomFn(userName));
       setPraiseOpen(true);
@@ -268,7 +266,7 @@ export default function TasksPage() {
                           Mark as Complete
                         </DropdownMenuItem>
                         <DropdownMenuItem
-                          disabled={!isAssignedToUser(task)}
+                          disabled={task.status === 'Completed' || !isAssignedToUser(task)}
                           onClick={() => openRemapDialog(task)}
                         >
                           Request Remapping

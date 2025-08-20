@@ -4,19 +4,14 @@ import { LoginForm } from "@/components/auth/login-form";
 export default function LoginPage() {
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center bg-black">
-      {/* Video background */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
+      {/* Image background */}
+      <img
+        src="/login.jpg"   // change this to your image path
+        alt="Background"
         className="fixed inset-0 w-full h-full object-cover z-0"
-      >
-        <source src="/video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      />
 
-      {/* Overlay to slightly darken video */}
+      {/* Overlay to slightly darken image */}
       <div className="fixed inset-0 bg-black/50 z-0"></div>
 
       {/* Glass-effect login box */}
@@ -29,3 +24,5 @@ export default function LoginPage() {
     </div>
   );
 }
+
+

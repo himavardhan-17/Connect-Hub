@@ -105,12 +105,7 @@ export function LoginForm() {
             <Button type="submit" className="w-full font-headline" disabled={loading}>
               {loading ? "Signing In..." : "Sign In"}
             </Button>
-            <div className="mt-4 text-center text-sm">
-              Don&apos;t have an account?{" "}
-              <Link href="#" className="underline text-primary">
-                Contact Admin
-              </Link>
-            </div>
+            
           </form>
         </Form>
       </CardContent>
