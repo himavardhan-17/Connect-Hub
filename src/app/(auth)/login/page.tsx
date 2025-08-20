@@ -6,7 +6,7 @@ export default function LoginPage() {
     <div className="relative w-full min-h-screen flex items-center justify-center bg-black">
       {/* Image background */}
       <img
-        src="/login.jpg"   // change this to your image path
+        src="/Login.jpg"   // change this to your image path
         alt="Background"
         className="fixed inset-0 w-full h-full object-cover z-0"
       />
